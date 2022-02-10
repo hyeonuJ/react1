@@ -1,4 +1,4 @@
-import { BottomBtn } from "../../style"
+import { BottomBtn } from "../../../style"
 
 const CommentButton = ({Id, Diary,setDiary}) => {
     const onCommentView = () => {
