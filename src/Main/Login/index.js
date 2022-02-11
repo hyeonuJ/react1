@@ -1,8 +1,8 @@
-import { BackDiv, LoignFrame, LoginButton } from "../style"
+import { BackDiv2, LoignFrame, LoginButton } from "../style"
 
 const Login = () => {
     return (
-        <BackDiv>
+        <BackDiv2>
             <LoignFrame>
                 로그인
                 <div style={{marginTop:"10px", borderTop:"4px solid white" , borderBottom:"4px solid white"}}>
@@ -19,7 +19,7 @@ const Login = () => {
                 </div>
                 <LoginButton>로그인</LoginButton>
             </LoignFrame>
-        </BackDiv>
+        </BackDiv2>
     )
 }
 

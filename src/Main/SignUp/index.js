@@ -1,8 +1,8 @@
-import { BackDiv, LoginButton, LoignFrame } from "../style"
+import { BackDiv2, LoginButton, LoignFrame } from "../style"
 
 const SignUp = () => {
     return (
-        <BackDiv>
+        <BackDiv2>
             <LoignFrame style={{height:"550px"}}>
                 회원가입
                 <div style={{marginTop:"10px", borderTop:"4px solid white" , borderBottom:"4px solid white"}}>
@@ -29,7 +29,7 @@ const SignUp = () => {
                 </div>
                 <LoginButton>회원가입</LoginButton>
             </LoignFrame>
-        </BackDiv>
+        </BackDiv2>
     )
 }
 

@@ -1,8 +1,67 @@
 import styled from "styled-components";
 
+export const BackNav = styled.nav`
+    visibility:hidden;
+    height:0px;
+    @media all and (min-width:1024px){
+        visibility:visible;
+        display:flex;
+        justify-content:center;
+        position:fixed;
+        background:purple;
+        width:20%;
+        height:100%;
+        border-right:5px solid white;
+        box-shadow:0 0.3rem 0.25rem gray;
+        padding-top:20px;
+    }
+    div{
+        position:absolute;
+        text-align:center;
+        background:white;
+        display:fixed;
+        top:20%;
+        width:90%;
+        height:20%;
+    }
+    button{
+        position:absolute;
+        top:5%;
+        height:10%;
+        width:9%;
+        :nth-child(1){
+            left:1%;
+            position:fixed;
+        }
+        :nth-child(2){
+            left:10%;
+            position:fixed;
+        }
+    }
+
+`
+
 export const BackDiv = styled.div`
+    display:block;
     background-color:lightGray;
-    min-height:100em;
+    min-height:100%;
+    padding:10px;
+    width: 100%;
+    padding-right: 3em;
+    padding-left: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    @media all and (min-width:1024px){
+        width:80%;
+        margin-left:20%;
+        margin-right:0%;
+    }
+`
+export const BackDiv2 = styled.div`
+    display:block;
+    position:absolute;
+    background-color:lightGray;
+    min-height:100%;
     padding:10px;
     width: 100%;
     padding-right: 3em;
@@ -202,6 +261,12 @@ export const CREATECONTENT = styled.button`
         margin-left:28%;
         transition:background 0.2s ease-in-out,width 0.2s ease-in-out,margin-left 0.2s ease-in-out;
     }
+    @media all and (min-width:1024px){
+        margin-left:15%;
+        :hover{
+            margin-left:13%;
+        }
+    }
 `
 
 export const CREATECONTENTMODAL = styled.div`
@@ -210,11 +275,16 @@ export const CREATECONTENTMODAL = styled.div`
     top:15%;
     width:50%;
     height:50%;
+    min-height:300px;
     margin-left:20%;
     background:white;
     border:3px solid purple;
     justify-content:center;
     padding:10px;
+    box-shadow:0 0.125rem 0.25rem gray;
+    @media all and (min-width:1024px){
+        margin-left:0%;
+    }
 `
 
 export const FORMMODAL = styled.div`
@@ -227,6 +297,7 @@ export const FORMMODAL = styled.div`
     margin-top:10%;
     margin-bottom:10%;
     text-align:center;
+    
 `
 
 export const CREATEBUTTON = styled.button`

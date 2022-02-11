@@ -1,4 +1,4 @@
-import { BackDiv, DiaryButton, DiaryDiv} from "../style"
+import { BackDiv, DiaryButton, DiaryDiv, BackNav} from "../style"
 import DiaryContent from "./DiaryContent/index";
 import { useState } from "react";
 import {Link} from "react-router-dom"
@@ -38,6 +38,9 @@ const Main = () => {
   ])
   return (
     <>
+      <BackNav>
+        <div>익명<button>내 정보</button><button>환경설정</button></div>
+      </BackNav>
       <BackDiv>
         <DiaryDiv>
           일기 게시판
@@ -45,6 +48,7 @@ const Main = () => {
           <Link to="SignUp"><DiaryButton style={{marginLeft:"1rem"}}>회원가입</DiaryButton></Link>
         </DiaryDiv>
         <DiaryContent Diary={Diary} setDiary={setDiary}/>
+
       </BackDiv>
 </>
   );
